@@ -171,22 +171,27 @@ main{
     color: var(--color-white);
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
 }
 
 .main__important__post--photography{
+    position: relative;
     background: linear-gradient(135deg, rgba(30, 33, 33, 0.82) 1%, rgba(32, 32, 32, 0.14) 98%),url('../ressources/image1.jpg') no-repeat center/cover;
     width: 40%;
-    height: 250px;
+    height: 40vh;
     border-radius: 5px;
+    margin: 0 1%;
 }
 
 .main__important__post--adventure{
-      background: linear-gradient(135deg, rgba(30, 33, 33, 0.82) 1%, rgba(32, 32, 32, 0.14) 98%), url('../ressources/image2.jpg') no-repeat center/cover;
+    position: relative;
+    background: linear-gradient(135deg, rgba(30, 33, 33, 0.82) 1%, rgba(32, 32, 32, 0.14) 98%), url('../ressources/image2.jpg') no-repeat center/cover;
     width: 40%;
-    height: 250px;
+    height: 40vh;
     border-radius: 5px;
+    margin: 0 1%;
+
 }
 
 .main__important__post--photography:hover{
@@ -208,26 +213,34 @@ main{
 }
 
 .main__important__post--photography--description{
-    width: 30%;
+    position: absolute;
+    left: 4%;
+    top: 4%;
     background-color: var(--color-purple);
-    border-radius: 5px;
-    margin-bottom: 8%;
-    padding: 2%;
+    border-radius: 2px;
+    padding: 1%;
     font-family: sans-serif;
+    line-height: 1.1rem;
 }
 
 .main__important__post--photography--title{
     font-size: 1.6rem;
     padding-bottom: 2%;
+    position: absolute;
+    top: 55%;
 }
 
 .main__important__post--photography--text{
     font-size: 1.1rem;
     font-family: sans-serif;
+    position: absolute;
+    top: 65%;
 }
 
 .main__important__post--photography--footer{
-    margin-top: 3%;
+    width: 90%;
+    position: absolute;
+    top : 78%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -252,26 +265,34 @@ main{
    }
    
    .main__important__post--adventure--description{
-       width: 30%;
+       position: absolute;
+       top: 4%;
+       left: 4%;
        background-color: var(--color-orange);
-       border-radius: 5px;
-       margin-bottom: 8%;
-       padding: 2%;
+       border-radius: 2px;
+       padding: 1%;
        font-family: sans-serif;
+       line-height: 1.1rem;
    }
 
 .main__important__post--adventure--title{
+    position: absolute;
+    top: 55%;
     font-size: 1.6rem;
     padding-bottom: 2%;
 }
 
 .main__important__post--adventure--text{
+    position: absolute;
+    top: 65%;
     font-size: 1.1rem;
     font-family: sans-serif;
 }
 
 .main__important__post--adventure--footer{
-    margin-top: 3%;
+    width: 90%;
+    position: absolute;
+    top: 78%;
     display: flex;
     justify-content: space-between;
     align-items: center;
